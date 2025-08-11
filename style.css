@@ -176,9 +176,6 @@ footer p {
   z-index: 999;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-decoration: none;
-
-  /* Continuous zoom animation */
-  animation: zoomInOut 2s ease-in-out infinite;
 }
 
 .whatsapp-button i {
@@ -186,18 +183,6 @@ footer p {
   color: white;
 }
 
-/* Zoom animation keyframes */
-@keyframes zoomInOut {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-}
 
 
 
@@ -492,7 +477,6 @@ footer p {
   color: #b5651d;
   text-decoration: none;
   display: inline-block;
-  animation: zoomInOut 2.5s ease-in-out infinite;
 }
 
 /* Nav links styling */
@@ -644,4 +628,9 @@ footer p {
 .footer-contact .brand h3 {
   color: #b5651d;
   margin: 0;
+}
+
+.team_img_wrapper img {
+  width: auto;   /* Change to your desired width */
+  height: auto;   /* Maintains aspect ratio */
 }
